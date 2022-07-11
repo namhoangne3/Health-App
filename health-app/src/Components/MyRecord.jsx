@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Card, CardBody, Col } from 'reactstrap'
 import "../css/dashboard.css"
 import record1Img from '../img/画像/MyRecommend-1.jpg'
 import record2Img from '../img/画像/MyRecommend-2.jpg'
 import record3Img from '../img/画像/MyRecommend-3.jpg'
-import { Line, Pie } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 
 const data = {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jan", "Feb", "Mar", "Apr", "May", "Jun"],
@@ -33,51 +33,48 @@ function MyRecord() {
             <Card style={{ margin: "auto" }}>
                 <CardBody>
                     <Card>
-                        <div className="grid-container-record">
-                            <div className='myrecord-tem'>
-                                <div className='in-myrecord-tem'>
-                                    <div className='img-record1'>
-                                        <div className='in-img-record1'>
-                                            <img src={record1Img}
-                                                style={{ height: "110%", width: "100%", objectFit: "cover", objectPosition: "0% -50%", zoom: "150%", filter: "grayscale(100%) brightness(70%) contrast(70%)" }}></img>
+                        <Card className="grid-container-record">
+                            <Card className='myrecord-tem'>
+                                <Card className='in-myrecord-tem'>
+                                    <Card className='img-record1'>
+                                        <Card className='in-img-record1'>
+                                            <img src={record1Img} className="body-record"></img>
                                             <div className='record-text'>BODY RECORD</div>
                                             <div className='record-text-btn'>自分のカラダの記録</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='myrecord-tem'>
-                                <div className='in-myrecord-tem'>
-                                    <div className='img-record1'>
-                                        <div className='in-img-record1'>
-                                            <img src={record2Img}
-                                                style={{ height: "100%", width: "140%", objectFit: "cover", objectPosition: "125% -40%", zoom: "100%", filter: "grayscale(100%) brightness(70%) contrast(70%)" }}></img>
+                                        </Card>
+                                    </Card>
+                                </Card>
+                            </Card>
+                            <Card className='myrecord-tem'>
+                                <Card className='in-myrecord-tem'>
+                                    <Card className='img-record1'>
+                                        <Card className='in-img-record1'>
+                                            <img src={record2Img} className="my-exs"></img>
                                             <div className='record-text'>MY EXERCISE</div>
                                             <div className='record-text-btn'>自分の運動の記録</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='myrecord-tem'>
-                                <div className='in-myrecord-tem'>
-                                    <div className='img-record1'>
-                                        <div className='in-img-record1'>
-                                            <img src={record3Img}
-                                                style={{ height: "110%", width: "120%", objectFit: "cover", objectPosition: "80% -50%", zoom: "100%", filter: "grayscale(100%) brightness(70%) contrast(60%)" }}></img>
+                                        </Card>
+                                    </Card>
+                                </Card>
+                            </Card>
+                            <Card className='myrecord-tem'>
+                                <Card className='in-myrecord-tem'>
+                                    <Card className='img-record1'>
+                                        <Card className='in-img-record1'>
+                                            <img src={record3Img} className="my-dia"></img>
                                             <div className='record-text'>MY DIARY</div>
                                             <div className='record-text-btn'>自分の日記</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        </Card>
+                                    </Card>
+                                </Card>
+                            </Card>
+                        </Card>
                     </Card>
                 </CardBody>
                 <CardBody style={{ width: "83.5%", maxHeight: "315px", padding: "0% 7.5% 10% 8.25%" }}>
-                    <div style={{ maxWidth: "100%", display: "flex", backgroundColor: "#414141" }}>
+                    <Card style={{ maxWidth: "100%", display: "flex", backgroundColor: "#414141" }}>
                         <div style={{ fontSize: "15px", fontWeight: "400", padding: "10px", color: "white" }}>BODY <br /> RECORD</div>
                         <div style={{ fontSize: "25px", fontWeight: "400", padding: "10px", color: "white" }}>2021.05.21</div>
-                    </div>
+                    </Card>
                     <Line
                         data={data}
                         style={{ width: "100%", maxHeight: "315px", backgroundColor: "#414141" }}
@@ -85,12 +82,12 @@ function MyRecord() {
                     </Line>
                 </CardBody>
                 <CardBody style={{ width: "83.5%", maxHeight: "315px", padding: "0% 7.5% 5% 8.25%" }}>
-                    <div style={{ maxWidth: "100%", display: "flex", backgroundColor: "#414141" }}>
+                    <Card style={{ maxWidth: "100%", display: "flex", backgroundColor: "#414141" }}>
                         <div style={{ fontSize: "15px", fontWeight: "400", padding: "10px", color: "white" }}>BODY <br /> RECORD</div>
                         <div style={{ fontSize: "25px", fontWeight: "400", padding: "10px", color: "white" }}>2021.05.21</div>
-                    </div>
-                    <div class="grid-container-mr">
-                        <div class="grid-item-mr">
+                    </Card>
+                    <div className="grid-container-mr">
+                        <div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -101,7 +98,7 @@ function MyRecord() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item-mr">
+                        <div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -111,7 +108,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -121,7 +118,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -131,7 +128,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -141,7 +138,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -151,7 +148,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -161,7 +158,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -171,7 +168,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -181,7 +178,7 @@ function MyRecord() {
                                     10 min
                                 </div>
                             </div>
-                        </div><div class="grid-item-mr">
+                        </div><div className="grid-item-mr">
                             <div style={{ display: "flex" }}>
                                 <span style={{ fontSize: "7px", padding: "5px 10px 0px 0px" }}>●</span>
                                 <div style={{ width: "50%", textAlign: "left", color: "white", fontFamily: 'Hiragino Kaku Gothic Pro', fontSize: "15px", fontWeight: "300" }}>
@@ -198,8 +195,8 @@ function MyRecord() {
                     <div style={{ maxWidth: "100%", display: "flex" }}>
                         <div style={{ fontSize: "25px", fontWeight: "400", padding: "10px", color: "Black" }}>MY DIARY</div>
                     </div>
-                    <div class="grid-container-md">
-                        <div class="grid-item-md">
+                    <div className="grid-container-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25
@@ -209,7 +206,7 @@ function MyRecord() {
                                 {recordText}
                             </div>
                         </div>
-                        <div class="grid-item-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25
@@ -219,7 +216,7 @@ function MyRecord() {
                                 {recordText}
                             </div>
                         </div>
-                        <div class="grid-item-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25
@@ -229,7 +226,7 @@ function MyRecord() {
                                 {recordText}
                             </div>
                         </div>
-                        <div class="grid-item-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25
@@ -239,7 +236,7 @@ function MyRecord() {
                                 {recordText}
                             </div>
                         </div>
-                        <div class="grid-item-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25
@@ -249,7 +246,7 @@ function MyRecord() {
                                 {recordText}
                             </div>
                         </div>
-                        <div class="grid-item-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25
@@ -259,7 +256,7 @@ function MyRecord() {
                                 {recordText}
                             </div>
                         </div>
-                        <div class="grid-item-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25
@@ -269,7 +266,7 @@ function MyRecord() {
                                 {recordText}
                             </div>
                         </div>
-                        <div class="grid-item-md">
+                        <div className="grid-item-md">
                             <div style={{ width: "70%", textAlign: "left", padding: "7%", fontSize: "18px", fontWeight: "400", color: "#414141" }}>
                                 2021.05.21 <br />
                                 23:25

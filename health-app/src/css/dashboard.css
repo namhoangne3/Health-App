@@ -145,19 +145,25 @@ a:visited {
 }
 
 .meal-text-m {
-    margin-left: 1.5%;
+    /* padding-left: 17%;
+     padding-right: 17%; */
+    width: 210px;
+    /* margin-left: 1.5%; */
 }
 
 .meal-text-l {
-    margin-left: 2%;
+    width: 210px;
+
 }
 
 .meal-text-d {
-    margin-left: 1.8%;
+    width: 210px;
+
 }
 
 .meal-text-s {
-    margin-left: 2%;
+    width: 210px;
+
 }
 
 .percent {
@@ -379,7 +385,7 @@ a:visited {
 }
 
 .record-text {
-    top: 32.5%;
+    top: 300px;
     width: 230px;
     text-align: center;
     font-size: 25px;
@@ -389,7 +395,7 @@ a:visited {
 }
 
 .record-text-btn {
-    top: 36.5%;
+    top: 330px;
     width: 160px;
     height: 24px;
     margin-left: 1.85%;
@@ -462,7 +468,7 @@ a:visited {
 }
 
 .column-text {
-    top: 32.5%;
+    top: 290px;
     width: 216px;
     height: 144px;
     background-color: #2E2E2E;
@@ -670,4 +676,108 @@ a:visited {
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.15;
+}
+
+.btn_dashboard {
+    height: 56px;
+    width: 296px;
+    background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+    border: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+.item-meal {
+    width: 25%;
+    text-align: center;
+}
+
+.body-record {
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% -50%;
+    zoom: 150%;
+    filter: grayscale(100%) brightness(70%) contrast(70%)
+}
+
+.my-exs {
+    height: 110%;
+    width: 130%;
+    object-fit: cover;
+    margin-top: -5.5%;
+    object-position: 50% -100%;
+    zoom: 100%;
+    filter: grayscale(100%) brightness(70%) contrast(70%)
+}
+
+.my-dia {
+    height: 120%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -10.5%;
+    object-position: 55% 50%;
+    zoom: 100%;
+    filter: grayscale(100%) brightness(70%) contrast(60%)
+}
+
+.text-clm {
+    max-width: 234px;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: 15px;
+    font-weight: 300
+}
+
+.hashtag {
+    color: #FF963C;
+    text-align: left;
+    font-size: 12px;
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-weight: 300
+}
+
+.btn-clm {
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 296px;
+    height: 56px;
+    background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%)
+}
+
+.b-opt-clm {
+    padding-top: 20px;
+    padding-bottom: 10px
+}
+
+.opt-clm {
+    margin-left: 80px;
+    width: 56px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #FFFFFF
+}
+
+.clppI {
+    position: absolute;
+    margin-top: -1.85%;
+    margin-left: -0.55%
+}
+
+.num-noti {
+    position: absolute;
+    margin-top: -65%;
+    margin-left: 15%;
+    font-size: 15px;
 }
